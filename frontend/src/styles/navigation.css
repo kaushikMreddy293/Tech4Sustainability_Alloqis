@@ -1,0 +1,55 @@
+/* NavBar.css */
+
+.navbar {
+  background-color: white; /* Dark background color */
+  overflow: hidden; /* Ensures the content is not overflowing */
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  padding: 10px 0; /* Add some padding above and below the nav bar */
+  height: 40px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.navbar ul {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox for the list items */
+  justify-content: space-between; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar li {
+  padding: 0 40px; /* Add horizontal padding between list items */
+}
+
+.navbar a {
+  text-decoration: none; /* Remove underline from links */
+  color: black; /* Light text color for contrast */
+  font-size: 16px; /* Set font size */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+  color: green;
+  border-bottom: 2px solid green; 
+}
+
+
+.contact-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: green;
+  text-decoration: none;
+  border: 2px solid green;
+  border-radius: 5px;
+  margin-left: 70px;
+}
+
+.contact-btn:hover {
+  background-color: green;
+  color: white !important;
+}
