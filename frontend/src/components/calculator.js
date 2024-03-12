@@ -63,7 +63,7 @@ const Calculator = ({ item }) => {
                                     value: item.Material_Type // Use item data for Material_Type
                                 },
                                 finalMass: {
-                                    quantity: item.Part_Mass, // Use item data for Part_Mass
+                                    quantity: item.Part_Total_Mass, // Use item data for Part_Mass
                                     unit: {
                                         referenceType: "enum",
                                         value: "kg"

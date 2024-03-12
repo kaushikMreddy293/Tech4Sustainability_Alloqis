@@ -46,6 +46,43 @@ app.post('/api/calculate-emissions', async (req, res) => {
   }
 });
 
+
+
+
+
+app.get('/api/positionstack', async (req, res) => {
+    try {
+        // Construct the query parameters
+        const params = new URLSearchParams({
+            access_key: 'cb31bec785f3664cc7570655bc4958a5',
+            query: '  '
+        });
+
+        // Make the GET request to the Positionstack API
+        const response = await fetch(`https://api.positionstack.com/v1/forward?${params}`);
+
+        // Check for errors
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        // Parse response as JSON
+        const data = await response.json();
+        console.log(data)
+        // Send the response back to the client
+        res.json(data);
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+
+
+
+
+
+
 // Start the server
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
