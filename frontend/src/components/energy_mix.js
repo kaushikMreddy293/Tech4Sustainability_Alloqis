@@ -1,7 +1,8 @@
 import React from 'react';
 import '../styles/energy_mix.css';
 import '../App.css'
-import flagIcon from '../assets/germany-flag-icon.svg'
+import GflagIcon from '../assets/germany-flag-icon.svg'
+import USFlagIcon from '../assets/united-states-flag-icon.svg';
 const EnergyMixComponent = ({ item }) => {
 
 
@@ -18,7 +19,8 @@ const EnergyMixComponent = ({ item }) => {
                 <div className='vertical-line'></div>
                 <div className='flxCol mix-side'>
                     <p className='heading'>Country Enegry Mix</p>
-                    <p> <img src={flagIcon} alt="Flag Icon" className="icon" />{item.Supplier_Country}</p>
+                   <p> <img src={item.Supplier_Country === 'Germany' ? GflagIcon : USFlagIcon} alt="Flag Icon" className="icon" />
+                    {item.Supplier_Country} </p>
                     <input
                         type="range"
                         min="0"
