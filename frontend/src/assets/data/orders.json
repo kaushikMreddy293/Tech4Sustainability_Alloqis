@@ -1,0 +1,72 @@
+[
+    {
+     "Part_ID": 1,
+     "Part_Name": "ABS-M30i",
+     "Material_Type": "abs",
+     "Part_Density": 1.04,
+     "Part_Volume": 10,
+     "Part_Mass": 10.4,
+     "Part_Quantity": 20,
+     "Part_Total_Mass": 208,
+     "Manufacturing_Process": "laser_powder_bed_fusion",
+     "Manufacturing_Region": "germany",
+     "CO2_Material": 0,
+     "CO2_Manufacturing": 0
+    },
+    {
+     "Part_ID": 2,
+     "Part_Name": "SS 304 L",
+     "Material_Type": "stainless_steel",
+     "Part_Density": 8.03,
+     "Part_Volume": 10,
+     "Part_Mass": 80.3,
+     "Part_Quantity": 20,
+     "Part_Total_Mass": 1606,
+     "Manufacturing_Process": "fused_deposition_modeling",
+     "Manufacturing_Region": "germany",
+     "CO2_Material": 0,
+     "CO2_Manufacturing": 0
+    },
+    {
+     "Part_ID": 3,
+     "Part_Name": "AlSi10Mg",
+     "Material_Type": "aluminum",
+     "Part_Density": 2.7,
+     "Part_Volume": 10,
+     "Part_Mass": 27,
+     "Part_Quantity": 20,
+     "Part_Total_Mass": 540,
+     "Manufacturing_Process": "cnc_milling",
+     "Manufacturing_Region": "germany",
+     "CO2_Material": 0,
+     "CO2_Manufacturing": 0
+    },
+    {
+     "Part_ID": 4,
+     "Part_Name": "Ti6Al4V ELI",
+     "Material_Type": "titanium",
+     "Part_Density": 4.42,
+     "Part_Volume": 10,
+     "Part_Mass": 44.2,
+     "Part_Quantity": 20,
+     "Part_Total_Mass": 884,
+     "Manufacturing_Process": "selective_laser_sintering",
+     "Manufacturing_Region": "germany",
+     "CO2_Material": 0,
+     "CO2_Manufacturing": 0
+    },
+    {
+     "Part_ID": 5,
+     "Part_Name": "Markforged Onyx",
+     "Material_Type": "nylon",
+     "Part_Density": 1.14,
+     "Part_Volume": 10,
+     "Part_Mass": 11.4,
+     "Part_Quantity": 20,
+     "Part_Total_Mass": 228,
+     "Manufacturing_Process": "directed_energy_deposition",
+     "Manufacturing_Region": "germany",
+     "CO2_Material": 0,
+     "CO2_Manufacturing": 0
+    }
+   ]
