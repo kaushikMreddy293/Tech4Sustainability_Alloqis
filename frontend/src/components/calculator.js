@@ -125,7 +125,7 @@ const Calculator = ({ item }) => {
         <div className="calculator-container hubballi-regular">
             <div className="flxCol carbon-container">
                 <div className="carbon-box">
-                    <h1>Co2 Footprint Total</h1>
+                    <h1>Here's the Footprint for Materials and Manufacturing</h1>
                 </div>
 
                 <div className="partName">Part Name: {item.Part_Name}</div>
@@ -143,12 +143,12 @@ const Calculator = ({ item }) => {
                         </div>
                         <h4>( Manufacturing Footprint )</h4>
                     </div>
-                    <div className="logistics-box">
+                    {/* <div className="logistics-box">
                         <div className="flxCol">
                             <div> {manufacturing_footprint} kgCO2</div>
                         </div>
                         <h4> ( Logistics Footprint )</h4>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

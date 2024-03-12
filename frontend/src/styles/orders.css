@@ -18,12 +18,22 @@
   }
   
   table th {
-    background-color: #f2f2f2;
+    background-color: white;
     font-weight: bold;
     text-align: left;
   }
   
   table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: rgb(210, 251, 210);
   }
   
+  .calc-btn{
+    padding:6px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: 2px solid green; /* Set border */
+    border-radius: 3px;
+  }

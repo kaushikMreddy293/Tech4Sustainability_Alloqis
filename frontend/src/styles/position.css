@@ -1,3 +1,64 @@
 .position-container{
-    margin-bottom: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    border: #009444 solid 1px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.position-container p{
+    font-size: 20px;
+}
+
+.position-container button{
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: 2px solid green; /* Set border */
+    border-radius: 3px;
+}
+
+.position-container button:disabled{
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border: 2px solid grey; /* Set border */
+    border-radius: 3px;
+}
+
+
+.flxRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.flxCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.logistic-box{
+    margin-top: 20px;
+    background-color:#6f82eb ;
+    padding: 20px;
+    border-radius: 85px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+.estimate-btns{
+    margin-bottom: 10px;
+    
+}
+.estimate-btn{
+    margin-left: 10px;
 }

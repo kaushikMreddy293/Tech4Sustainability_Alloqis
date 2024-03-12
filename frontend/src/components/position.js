@@ -10,6 +10,7 @@ const PositionStackComponent = ({ item }) => {
     const [isCalculateDisabled, setIsCalculateDisabled] = useState(true);
     const [carbonEstimate, setCarbonEstimate] = useState(null);
     const [isCalculateCarbonEstimate, setIsCalculateCarbonEstimate] = useState(true);
+    const [transportMethodUsed, setTransportMethodUsed] = useState(null);
 
     // Function to calculate distance between two points using Haversine formula
     const calculateDistance = (lat1, lon1, lat2, lon2) => {
@@ -32,6 +33,7 @@ const PositionStackComponent = ({ item }) => {
     //Function to get Logistics estimate
     const handleGetCarbonEstimate = (transportMethod) => {
         const API_KEY = 'vXdxHdGFSw4ojlAXFogQ';
+        setTransportMethodUsed(transportMethod);
 
         const requestData = {
             type: 'shipping',
@@ -134,7 +136,8 @@ const PositionStackComponent = ({ item }) => {
        
 
     return (
-        <div className="position-container hubballi-regular">
+        <div className="position-container flxCol hubballi-regular">
+            <h1>Let's Find the Footprint for Logistics</h1>
             <div>
                 <h2>Customer Location</h2>
                 <button onClick={handleCustomerButtonClick}>Fetch Customer Location</button>
@@ -181,18 +184,19 @@ const PositionStackComponent = ({ item }) => {
 
          <div>
             <h2>Get Logistic Footprint</h2>
-            <div>
-                <button onClick={() => handleGetCarbonEstimate('truck')} disabled={isCalculateCarbonEstimate}>Get Truck Estimate</button>
-                <button onClick={() => handleGetCarbonEstimate('plane')} disabled={isCalculateCarbonEstimate}>Get Plane Estimate</button>
-                <button onClick={() => handleGetCarbonEstimate('ship')} disabled={isCalculateCarbonEstimate}>Get Ship Estimate</button>
-                <button onClick={() => handleGetCarbonEstimate('train')} disabled={isCalculateCarbonEstimate}>Get Train Estimate</button>
+            <div className="estimate-btns ">
+                <button className="estimate-btn " onClick={() => handleGetCarbonEstimate('truck')} disabled={isCalculateCarbonEstimate}>Get Truck Estimate</button>
+                <button className="estimate-btn " onClick={() => handleGetCarbonEstimate('plane')} disabled={isCalculateCarbonEstimate}>Get Plane Estimate</button>
+                <button className="estimate-btn " onClick={() => handleGetCarbonEstimate('ship')} disabled={isCalculateCarbonEstimate}>Get Ship Estimate</button>
+                <button className="estimate-btn " onClick={() => handleGetCarbonEstimate('train')} disabled={isCalculateCarbonEstimate}>Get Train Estimate</button>
             </div>
             {carbonEstimate && (
-                <div>
-                    <p>
-                       <strong> Carbon emitted:</strong> {carbonEstimate.data.attributes.carbon_g} gCO2
-                        </p>
-                    {/* Add more details if needed */}
+                <div className="logistic-box">
+                        <div className="flxCol">
+                            <div>{carbonEstimate.data.attributes.carbon_kg} kgCO2</div>
+                        </div>
+                        <p>{transportMethodUsed}</p>
+                        <h4>( Logistics Footprint )</h4>
                 </div>
             )}
         </div>      

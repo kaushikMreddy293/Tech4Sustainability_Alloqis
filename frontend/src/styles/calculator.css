@@ -3,11 +3,17 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 40px;
+    margin: 50px;
+    border: #009444 solid 1px;
+    background-color: aliceblue;
+    border-radius: 20px;
     /* height: 50vh; Optionally, to center vertically */
 }
 .partName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 24px;
     font-weight: bold;
 }
@@ -19,16 +25,21 @@
     margin-top: 10px;
     font-size: 20px;
     font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.carbon-box{
+/* .carbon-box{
     width: 400px;
     color: white;
-    background-color: black; /* Material footprint color */
+    background-color: black;
     padding: 2px;
     border-radius: 20px;
-    margin-left: 140px;
-}
+    margin-top: 20px;
+} */
 .material-box {
     background-color: #FF4C56; /* Material footprint color */
     padding: 20px;
@@ -40,14 +51,11 @@
 .manufacturing-box {
     background-color: #FFC63C; /* Manufacturing footprint color */
     padding: 20px;
-    /* margin-left: 10px; */
-}
-.logistics-box{
-    background-color:#536CF1 ;
-    padding: 20px;
     border-top-right-radius: 70px;
     border-bottom-right-radius: 70px;
+    /* margin-left: 10px; */
 }
+
 
 
 

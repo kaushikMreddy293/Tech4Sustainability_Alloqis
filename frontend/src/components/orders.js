@@ -28,6 +28,7 @@ const Orders = () => {
             {/* <p>Check Console for Access Token</p> */}
             
             <h1>Orders Table</h1>
+            <p>(Click on Calculate to find the CO2 estimates)</p>
             <table>
         <thead>
           <tr>
@@ -38,6 +39,7 @@ const Orders = () => {
             <th>Part Volume cm3 </th>
             <th>Part Quantity</th>
             <th>Part Mass Kg</th>
+            <th>Part Price (Euros) </th>
             <th>Manufacturing Process</th>
             <th>Manufacturing Region</th>
             <th>Calculate CO2</th>
@@ -53,10 +55,11 @@ const Orders = () => {
               <td>{item.Part_Volume}</td>
               <td>{item.Part_Quantity}</td>
               <td>{item.Part_Total_Mass}</td>
+              <td>{item.Price}</td>
               <td>{item.AMNtechnology}</td>
               <td>{item.Supplier_Country}</td>
               <td>
-              <button onClick={() => handleCalculate(item)}>Calculate</button> {/* Use Link to navigate */}
+              <button className="calc-btn" onClick={() => handleCalculate(item)}>Calculate</button> {/* Use Link to navigate */}
                 </td> {/* Pass the item to handleCalculate function */}
             </tr>
           ))}
