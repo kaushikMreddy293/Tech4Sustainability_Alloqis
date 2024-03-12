@@ -1,0 +1,82 @@
+
+.enery-mix-container{
+
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    border: #009444 solid 1px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.flxRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.flxCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-line {
+    width: 4px; /* Set the width of the vertical line */
+    height: 180px; /* Set the height to match the height of the row */
+    background-color: green; /* Set the background color to green */
+    margin: 30px; /* Adjust margin as needed */
+}
+.tech-side{
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex; 
+    align-items: center; 
+    margin-left: 30px;
+   
+}
+.mix-side{
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.heading{
+    width: 140px;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #009444;
+    border-radius: 5px;
+    color: white;
+}
+
+input[type="range"]:disabled {
+    background-color: blue !important; /* Change background color to green for disabled state */
+    opacity: 1 !important; /* Make the slider fully visible */
+  }
+
+  input[type="range"]:disabled::-webkit-slider-runnable-track {
+    background-color: rgb(28, 119, 28); /* Green background color for disabled state */
+    border: 2px solid green; /* Thumb border */
+  border-radius: 10px; 
+}
+  input[type="range"]:disabled:-webkit-slider-thumb{
+    background-color: #007bff;
+  }
+
+  .mix-side p {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+  }
+  .tech-side p {
+   
+  }
+  
+  .icon {
+    width: 35px; /* Set the width of the icon */
+    height: 35px; /* Set the height of the icon */
+    margin-right: 5px; /* Adjust spacing between icon and text */
+  }

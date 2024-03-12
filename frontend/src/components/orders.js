@@ -7,6 +7,7 @@ import Calculator from "./calculator";
 import '../App.css'
 import { Link } from 'react-router-dom';
 import PositionStackComponent from "./position";
+import EnergyMixComponent from "./energy_mix";
 
 const Orders = () => {
 
@@ -66,8 +67,12 @@ const Orders = () => {
         </tbody>
       </table>
       </div>
-      {selectedItem && <Calculator item={selectedItem} />} 
+          <div className="component-container"> 
+          {selectedItem && <Calculator item={selectedItem} />} 
+      {selectedItem && <EnergyMixComponent item={selectedItem}/>}
       {selectedItem && <PositionStackComponent item={selectedItem} />} 
+          </div>
+      
             <Footer/>
             
         </div>

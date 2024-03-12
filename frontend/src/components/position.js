@@ -34,11 +34,20 @@ const PositionStackComponent = ({ item }) => {
     const handleGetCarbonEstimate = (transportMethod) => {
         const API_KEY = 'vXdxHdGFSw4ojlAXFogQ';
         setTransportMethodUsed(transportMethod);
+        var temp_weigh_unit = 'kg';
+        
+        if( item.Part_Total_Mass < 1){
+            var temp_weight = item.Part_Total_Mass * 1000;
+            temp_weigh_unit = 'g'
+        }
+        else {
+            temp_weight = item.Part_Total_Mass;
+        }
 
         const requestData = {
             type: 'shipping',
-            weight_value: item.Part_Total_Mass,
-            weight_unit: 'kg',
+            weight_value: temp_weight,
+            weight_unit: temp_weigh_unit,
             distance_value: distance,
             distance_unit: 'km',
             transport_method: transportMethod

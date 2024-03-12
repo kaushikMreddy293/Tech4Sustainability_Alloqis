@@ -5,6 +5,13 @@
     align-items: center;
     margin: 20px auto; /* Adjust margin as needed */
   }
+
+  .component-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   table {
     width: 95%; /* Adjust width as needed */

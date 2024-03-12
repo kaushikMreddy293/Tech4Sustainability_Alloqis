@@ -143,12 +143,6 @@ const Calculator = ({ item }) => {
                         </div>
                         <h4>( Manufacturing Footprint )</h4>
                     </div>
-                    {/* <div className="logistics-box">
-                        <div className="flxCol">
-                            <div> {manufacturing_footprint} kgCO2</div>
-                        </div>
-                        <h4> ( Logistics Footprint )</h4>
-                    </div> */}
                 </div>
             </div>
         </div>
