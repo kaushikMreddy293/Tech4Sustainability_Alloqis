@@ -26,7 +26,6 @@ app.post('/api/calculate-emissions', async (req, res) => {
       'Content-Type': 'application/json'
     };
 
-    console.log(req.body)
     // Make POST request to API using fetch
     const response = await fetch(url, {
       method: 'POST',
@@ -68,7 +67,6 @@ app.get('/api/positionstack', async (req, res) => {
 
         // Parse response as JSON
         const data = await response.json();
-        console.log(data)
         // Send the response back to the client
         res.json(data);
     } catch (error) {

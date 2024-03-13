@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '../styles/calculator.css'
 import '../App.css'
-import Navigation from "./navigation";
-import Footer from "./footer";
+import calcData from '../assets/data/orders.json'
 
 const Calculator = ({ item }) => {
     // State to store API response
