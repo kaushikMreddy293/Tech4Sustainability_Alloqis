@@ -17,10 +17,10 @@
 .position-container button{
     padding: 8px 12px;
     font-size: 14px;
-    background-color: green;
+    background-color: #009444;
     color: white;
     cursor: pointer;
-    border: 2px solid green; /* Set border */
+    border: 2px solid #009444; /* Set border */
     border-radius: 3px;
 }
 

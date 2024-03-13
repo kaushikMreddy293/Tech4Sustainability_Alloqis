@@ -1,11 +1,3 @@
-.plot-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-}
-
 .legend {
     display: flex;
     margin-top: 10px;
@@ -27,3 +19,10 @@
     font-size: 14px;
   }
   
+  .plot-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}

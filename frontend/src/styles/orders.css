@@ -38,9 +38,9 @@
     padding:6px 10px;
     font-size: 10px;
     font-weight: bold;
-    background-color: green;
+    background-color: #009444;
     color: white;
     cursor: pointer;
-    border: 2px solid green; /* Set border */
+    border: 2px solid #009444; /* Set border */
     border-radius: 3px;
   }
