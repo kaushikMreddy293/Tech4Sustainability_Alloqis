@@ -16,7 +16,14 @@ const Orders = () => {
 
    const handleCalculate = (item) => {
     setSelectedItem(item); // Set the selected item
+    scrollToTarget();
  };
+
+ 
+ const scrollToTarget = () => {
+  const targetSection = document.getElementById('targetSection');
+  targetSection.scrollIntoView({ behavior: 'smooth' });
+};
 
  
 
@@ -69,7 +76,7 @@ const Orders = () => {
         </tbody>
       </table>
       </div>
-          <div className="component-container"> 
+          <div id="targetSection" className="component-container"> 
           {selectedItem && <Calculator item={selectedItem} />} 
       {selectedItem && <EnergyMixComponent item={selectedItem}/>}
       {selectedItem && <PositionStackComponent item={selectedItem} />} 

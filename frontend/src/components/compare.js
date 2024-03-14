@@ -156,6 +156,11 @@ const Compare = () => {
         updateOrderData();
     }, []);
 
+    const scrollToTarget = () => {
+        const targetSection = document.getElementById('targetSection');
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      };
+
     return (
         <div>
             <Navigation />
@@ -166,6 +171,7 @@ const Compare = () => {
             {/* <p>Check Console for Access Token</p> */}
             
             <h1>Price vs Carbon Estimate Plot Table</h1>
+            <button className='chart-btn' onClick={() => scrollToTarget()}>Go to Chart</button>
 
         <table>
             <thead>
@@ -189,7 +195,10 @@ const Compare = () => {
                 ))}
             </tbody>
         </table>
+        <div id='targetSection'>
         {orderDataState && <ScatterPlot data={orderDataState} />}
+        </div>
+        
     </div>
     <Footer/>
     </div>

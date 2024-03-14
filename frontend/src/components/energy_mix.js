@@ -18,7 +18,7 @@ const EnergyMixComponent = ({ item }) => {
                 </div>
                 <div className='vertical-line'></div>
                 <div className='flxCol mix-side'>
-                    <p className='heading'>Country Enegry Mix</p>
+                    <p className='heading'>Country Energy Mix</p>
                    <p> <img src={item.Supplier_Country === 'Germany' ? GflagIcon : USFlagIcon} alt="Flag Icon" className="icon" />
                     {item.Supplier_Country} </p>
                     <input
